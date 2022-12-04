@@ -1,0 +1,62 @@
+.game-content button{
+    width: 200px;
+    height: 200px;
+    border: none;
+    margin-bottom: 3px;
+    font-size: 100px;
+}
+
+#square-one{
+    background-color: red;
+    color:blue;
+}
+
+#square-two{
+    background-color: blue;
+    color:green;
+}
+
+#square-three{
+    background-color: green;
+    color:yellow;
+}
+
+#square-four{
+    background-color: yellow;
+    color:red;
+}
+
+#square-five{
+    background-color: red;
+    color:blue;
+}
+
+#square-six{
+    background-color: blue;
+    color:green;
+}
+
+#square-seven{
+    background-color: green;
+    color:yellow;
+}
+
+#square-eight{
+    background-color: yellow;
+    color:red;
+}
+
+#square-nine{
+    background-color: red;
+    color:blue;
+}
+
+.game-content button:hover{
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;    
+}
+
+#game-over{
+    display:none;
+}

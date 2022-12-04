@@ -1,0 +1,22 @@
+body{
+    background-color: aqua;
+}
+
+button{
+    background-color: yellow;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 40px 40px;
+
+}
+
+.space{
+    padding-right: 25px;
+}
+ .center{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    padding: 40px 40px;
+
+}

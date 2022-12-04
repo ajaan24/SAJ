@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard Mode</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="hardmode.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="hardmode.js"></script>
+    <script src="links.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img id="header-logo" src="images/SAJ_Logo.PNG" alt="logo image">
+        <div class="header-right">
+            <button id="main-menu" onclick="goToMain()">Main Menu</button>
+            <button id="instructions" onclick="instructions()">Instructions</button>
+        </div>
+    </div>
+
+    <div id="game">
+        <div class="game-screen-top">
+            <div class="lives">
+                <img id="hearts" src="images/threeheart.png" alt="hearts image">
+            </div>
+
+            <img id="game-screen-logo" src="images/SAJ_Logo.PNG" alt="logo image">
+
+            <div class="timer">
+                <p id="clock">Timer: 20</p>
+            </div>
+        </div>
+
+        <div class="game-screen-middle">
+            <div class="game-content">
+                <button id="square-one" onclick="userInput(1)">1</button>
+                <button id="square-two" onclick="userInput(2)">2</button>
+                <button id="square-three" onclick="userInput(3)">3</button>
+                <br>
+                <button id="square-four" onclick="userInput(4)">4</button>
+                <button id="square-five" onclick="userInput(5)">5</button>
+                <button id="square-six" onclick="userInput(6)">6</button>
+                <br>
+                <button id="square-seven" onclick="userInput(7)">7</button>
+                <button id="square-eight" onclick="userInput(8)">8</button>
+                <button id="square-nine" onclick="userInput(9)">9</button>
+            </div>
+            <button id="startBtn" onclick="game()">START</button>
+            <div id="display-sequence">
+                <p id="display-sequence-text">sequence displays here!</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="game-over">
+        <div class="title">
+            <h1>GAME OVER</h1>
+        </div>
+    
+        <p id="final-score"></p>
+    
+        <div class="buttons">
+            <button onclick="goToMain()">MAIN MENU</button><br><br>
+            <button onclick="goToHighscores()">HIGHSCORES</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; SAJ 2022 (Authors: Shayan, Ajaan, Joshua)<span> EECS 1012</span></p>
+    </div>
+</body>
+</html>

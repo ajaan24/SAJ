@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Menu</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="links.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img id="header-logo" src="images/SAJ_Logo.PNG" alt="logo image">
+        <div class="header-right">
+            <button id="main-menu" onclick="goToMain()">Main Menu</button>
+            <button id="instructions" onclick="instructions()">Instructions</button>
+        </div>
+    </div>
+
+    <div class="title">
+        <img id="title-logo" src="images/SAJ_Logo.PNG" alt="logo image">
+        <h1>RETRO CHILDREN<br>ENTERTAINMENT HUB</h1>
+    </div>
+
+    <div class="buttons">
+        <button onclick="goToDifficulty()">PLAY</button><br><br>
+        <button onclick="goToHighscores()">HIGHSCORES</button><br><br>    
+        <button onclick="goToPokedex()">POKEDEX</button>
+    </div>
+
+    <div class="footer">
+        <p>&copy; SAJ 2022 (Authors: Shayan, Ajaan, Joshua)<span> EECS 1012</span></p>
+    </div>
+</body>
+</html>

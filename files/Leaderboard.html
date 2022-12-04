@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=	, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="Leaderboard.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="Leaderboard.js"></script>
+    <script src="links.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img id="header-logo" src="images/SAJ_Logo.PNG" alt="logo image">
+        <div class="header-right">
+            <button id="main-menu" onclick="goToMain()">Main Menu</button>
+            <button id="instructions" onclick="instructions()">Instructions</button>
+        </div>
+    </div>
+
+    <div class="leaderboard">
+        <h1 id="easy-table-title">EASY MODE HIGHSCORES</h1>
+        <img src="images/SAJ_Logo.png" alt="saj logo" class="theme-img">
+        <h1 id="hard-table-title">HARD MODE HIGHSCORES</h1>
+    </div>
+
+    <table id="easy-table">
+        <thead>
+            <tr>
+                <td></td>
+                <td>
+                    Player
+                </td>
+                <td>
+                    Easy Mode Score
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="winner">1</td>
+                <td><p id="first-name-easy"> --- </p></td>
+                <td><p id="first-score-easy"> --- </p></td>
+            </tr>
+            
+            <tr>
+                <td id="runner-up">2</td>
+                <td><p id="second-name-easy"> --- </p></td>
+                <td><p id="second-score-easy"> --- </p></td>
+            </tr>
+            
+            <tr>
+                <td id="second-runner-up">3</td>
+                <td><p id="third-name-easy"> --- </p></td>
+                <td><p id="third-score-easy"> --- </p></td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td><p id="fourth-name-easy"> --- </p></td>
+                <td><p id="fourth-score-easy"> --- </p></td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td><p id="fifth-name-easy"> --- </p></td>
+                <td><p id="fifth-score-easy"> --- </p></td>
+            </tr>
+        </body>
+    </table>
+
+    <table id="hard-table">
+        <thead>
+            <tr>
+                <td></td>
+                <td>
+                    Player
+                </td>
+                <td>
+                    Hard Mode Score
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="winner">1</td>
+                <td><p id="first-name-hard"> --- </p></td>
+                <td><p id="first-score-hard"> --- </p></td>
+            </tr>
+            
+            <tr>
+                <td id="runner-up">2</td>
+                <td><p id="second-name-hard"> --- </p></td>
+                <td><p id="second-score-hard"> --- </p></td>
+            </tr>
+            
+            <tr>
+                <td id="second-runner-up">3</td>
+                <td><p id="third-name-hard"> --- </p></td>
+                <td><p id="third-score-hard"> --- </p></td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td><p id="fourth-name-hard"> --- </p></td>
+                <td><p id="fourth-score-hard"> --- </p></td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td><p id="fifth-name-hard"> --- </p></td>
+                <td><p id="fifth-score-hard"> --- </p></td>
+            </tr>
+        </body>
+    </table>
+        
+    <div id="div-back-to-main-menu">
+        <button id="back-to-main-menu" onClick="goToMain()">Return to Main Menu</button>
+    </div>
+
+    <div class="footer">
+        <p>&copy; SAJ 2022 (Authors: Shayan, Ajaan, Joshua)<span> EECS 1012</span></p>
+    </div>
+</body>
+</html>
